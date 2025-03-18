@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
     implementation 'org.xerial.sqlite-jdbc:sqlite-jdbc:3.45.1' // Adjust the version as needed
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'

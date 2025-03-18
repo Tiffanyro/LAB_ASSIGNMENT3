@@ -1,5 +1,6 @@
 ## This document outlines the project's structure and organization as managed within IntelliJ IDEA.
 
+## Approach 1
 ## Top-Level Structure
 
 * **`.idea/`**: IntelliJ IDEA project configuration files. This directory should generally be excluded from version control (e.g., using `.gitignore`) except for team-shared settings.
@@ -25,7 +26,46 @@
 ## `src/main/java/` Structure (Example - Java Project)
 
 The `src/main/java/` directory typically follows a package structure that reflects the project's logical components. For example:
+* **`com.example.app/`**: Contains the main application logic.
+* **`com.example.data/`**: Contains data-related classes (e.g., entities, repositories, data transfer objects).
+* **`com.example.util/`**: Contains utility classes.
 
+## `src/test/java/` Structure
+
+The `src/test/java/` directory mirrors the `src/main/java/` directory structure, containing unit tests and integration tests.
+
+## Approach 2
+- Project Root
+    - src/
+        - main/
+            - java/
+                - com/
+                    - example/
+                        - MyClass.java
+        - test/
+            - java/
+                - com/
+                    - example/
+                        - MyClassTest.java
+    - resources/
+    - README.md
+
+## Approach 3
+
+Project Root
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── com
+│   │           └── example
+│   │               └── MyClass.java
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── MyClassTest.java 1
+├── resources
+└── README.md
 
 /
 ├── README.md
